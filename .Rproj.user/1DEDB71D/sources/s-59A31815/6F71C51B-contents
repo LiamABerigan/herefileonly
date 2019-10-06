@@ -1,0 +1,13 @@
+Package: herefileonly
+Type: Package
+Title: Performs functions of the here package, but only in respect to .here files
+Version: 0.1.0
+Author: Modified from the here package by Kirill Müller
+Maintainer: Liam Berigan <liamaberigan@gmail.com>
+Description: The here package by Kirill Müller is a useful way to implement safe, relative paths in a file directory. However, 
+    the package doesn't work well when projects are stored in a different subdirectory than the data.
+    This slight modification to the package responds only to the presence of a .here file, which should be placed in a directory 
+    which is parent to both the RProject and the data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
