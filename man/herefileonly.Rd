@@ -8,15 +8,16 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-herefileonly(x)
+here_file()
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
+  \item{}{
 %%     ~~Describe \code{x} here~~
 }
 }
 \details{
+Performs the functions of the here::here function, but only in respect to a .here file. Will not work if the 'here' package is also loaded
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
@@ -42,12 +43,6 @@ herefileonly(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (x)
 {
   }
 }

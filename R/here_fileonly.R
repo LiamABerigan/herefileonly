@@ -23,7 +23,7 @@
 #' here("some", "path", "below", "your", "project", "root.txt")
 #' here("some/path/below/your/project/root.txt")
 #' }
-here <- function(...) {
+here_file <- function(...) {
   .root_env$f(...)
 }
 
