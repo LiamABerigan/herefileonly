@@ -1,4 +1,4 @@
-Package: herefileonly
+Package: there
 Type: Package
 Title: Performs functions of the here package, but only in respect to .here files
 Version: 0.1.0
