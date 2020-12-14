@@ -22,7 +22,7 @@ in the current directory.
 When here encounters such a file, it uses the
 directory that contains this file as root.
 This is useful if none of the default criteria apply.
-You need to restart the R session so that \code{here()}
+You need to restart the R session so that \code{here_file()}
 picks up the newly created file.
 }
 \section{Life cycle}{

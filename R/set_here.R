@@ -7,7 +7,7 @@
 #' When here encounters such a file, it uses the
 #' directory that contains this file as root.
 #' This is useful if none of the default criteria apply.
-#' You need to restart the R session so that `here()`
+#' You need to restart the R session so that `here_file()`
 #' picks up the newly created file.
 #'
 #' @section Life cycle:

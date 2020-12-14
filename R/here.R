@@ -1,6 +1,6 @@
 #' Find your files
 #'
-#' `here()` uses a reasonable heuristics to find your project's files, based on
+#' `here_file()` uses a reasonable heuristics to find your project's files, based on
 #' the current working directory at the time when the package is loaded.
 #' Use it as a drop-in replacement for [file.path()], it will always locate the
 #' files relative to your project root.
@@ -10,7 +10,7 @@
 #' the \pkg{rprojroot} package for more control,
 #' or for package development.
 #'
-#' If `here()` raises an error or otherwise behaves unexpectedly,
+#' If `here_file()` raises an error or otherwise behaves unexpectedly,
 #' you may have attached \pkg{plyr} or another package
 #' after \pkg{here}.
 #' Correct this using
@@ -25,12 +25,12 @@
 #'   path components separated by a forward slash `"/"`.
 #' @export
 #' @examples
-#' here()
+#' here_file()
 #' \dontrun{
 #' here("some", "path", "below", "your", "project", "root.txt")
 #' here("some/path/below/your/project/root.txt")
 #' }
-here <- function(...) {
+here_file <- function(...) {
   .root_env$root$f(...)
 }
 

@@ -12,8 +12,8 @@ Include reason in output of \code{dr_here()}, defaults to \code{TRUE}.}
 }
 \description{
 \code{dr_here()} shows a message that by default also includes the
-reason why \code{here()} is set to a particular directory.
-Use this function if \code{here()} gives unexpected results.
+reason why \code{here_file()} is set to a particular directory.
+Use this function if \code{here_file()} gives unexpected results.
 }
 \examples{
 dr_here()

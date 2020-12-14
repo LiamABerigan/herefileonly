@@ -1,8 +1,8 @@
 #' Situation report
 #'
 #' `dr_here()` shows a message that by default also includes the
-#' reason why `here()` is set to a particular directory.
-#' Use this function if `here()` gives unexpected results.
+#' reason why `here_file()` is set to a particular directory.
+#' Use this function if `here_file()` gives unexpected results.
 #' @param show_reason `[logical(1)]`\cr
 #'   Include reason in output of `dr_here()`, defaults to `TRUE`.
 #' @export
@@ -14,7 +14,7 @@ dr_here <- function(show_reason = TRUE) {
 
 format_dr_here <- function(show_reason) {
   paste0(
-    "here() starts at ", here(),
+    "here_file() starts at ", here_file(),
     if (show_reason) {
       paste0(
         ".",

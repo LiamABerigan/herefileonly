@@ -3,7 +3,7 @@
 #' Add a call to `here::i_am("<project-relative path>.<ext>")`
 #' at the top of your R script or in the first chunk of your rmarkdown document.
 #' This ensures that the project root is set up correctly:
-#' subsequent calls to `here()` will refer to the implied project root.
+#' subsequent calls to `here_file()` will refer to the implied project root.
 #' If the current working directory is outside of the project
 #' where the script or report is intended to run, it will fail
 #' with a descriptive message.
