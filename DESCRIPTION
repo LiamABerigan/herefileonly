@@ -1,13 +1,44 @@
-Package: there
-Type: Package
-Title: Performs functions of the here package, but only in respect to .here files
-Version: 0.1.0
-Author: Modified from the here package by Kirill Müller
-Maintainer: Liam Berigan <liamaberigan@gmail.com>
-Description: The here package by Kirill Müller is a useful way to implement safe, relative paths in a file directory. However, 
-    the package doesn't work well when projects are stored in a different subdirectory than the data.
-    This slight modification to the package responds only to the presence of a .here file, which should be placed in a directory 
-    which is parent to both the RProject and the data.
-License: GPL-3
+Package: here
+Title: A Simpler Way to Find Your Files
+Version: 1.0.1.9000
+Date: 2020-12-13
+Authors@R: 
+    c(person(given = "Kirill",
+             family = "M\u00fcller",
+             role = c("aut", "cre"),
+             email = "krlmlr+r@mailbox.org",
+             comment = c(ORCID = "0000-0002-1416-3412")),
+      person(given = "Jennifer",
+             family = "Bryan",
+             role = "ctb",
+             email = "jenny@rstudio.com",
+             comment = c(ORCID = "0000-0002-6983-2759")))
+Description: Constructs paths to your project's files.
+    Declare the relative path of a file within your project with 'i_am()'.
+    Use the 'here()' function as a drop-in replacement for 'file.path()',
+    it will always locate the files relative to your project root.
+License: MIT + file LICENSE
+URL: https://here.r-lib.org/, https://github.com/r-lib/here
+BugReports: https://github.com/r-lib/here/issues
+Imports: 
+    rprojroot (>= 2.0.2)
+Suggests: 
+    conflicted,
+    covr,
+    fs,
+    knitr,
+    palmerpenguins,
+    plyr,
+    readr,
+    rlang,
+    rmarkdown,
+    testthat,
+    uuid,
+    withr
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9000
+Config/testthat/edition: 3
